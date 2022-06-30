@@ -8,9 +8,9 @@ function DeleteTask (props) {
     )
 }
 const mapDispatchToProps = dispatch => ({
-    deleteTask: (id) => dispatch({
+    deleteTask: id => dispatch({
         type: "DELETE_TASK",
-        payload: {id}
+        payload: id,
     })
 })
 
